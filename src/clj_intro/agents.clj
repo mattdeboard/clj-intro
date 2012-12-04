@@ -2,8 +2,6 @@
   (:use [clojure.java.shell :only [sh]]
         [clojure.string]))
 
-(use '[clojure.java.shell :only [sh]]
-     'clojure.string)
 (def folder "/home/matt/clojure-presentation")
 
 (defn touch
@@ -26,6 +24,8 @@ to do with each other."
     ;; `make-files' fn would return its value immediately: the deref'd
     ;; agent values. Since we do however the return value is the result
     ;; of the `touch' fn.
-    (apply await-for 10000 agents)
+    ;; (apply await-for 10000 agents)
     (doall (map #(deref %) agents))))
+
+(make-files)
 

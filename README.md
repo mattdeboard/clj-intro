@@ -1,13 +1,4 @@
 # clj-intro
-
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
-
-## License
-
-Copyright © 2012 FIXME
-
-Distributed under the Eclipse Public License, the same as Clojure.
+http://www.slideshare.net/adorepump/clojure-an-introduction-for-java-programmers
+http://www.infoq.com/presentations/Simple-Made-Easy
+https://github.com/marick/Midje

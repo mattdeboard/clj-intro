@@ -1,5 +1,5 @@
 (ns clj-intro.javainterop
-  (:import [com.itextpdf.text PdfReader SimpleBookmark]))
+  (:import [com.itextpdf.text.pdf PdfReader SimpleBookmark]))
 
 (defmacro proxy-meta
   "This macro emits a function that can then be called with the appropriate

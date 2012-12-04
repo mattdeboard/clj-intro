@@ -36,11 +36,11 @@
 
 ;; Equivalent to `from clojure.set import *' in Python. 
 (use 'clojure.set)
+
 (union #{:a :b :c} #{:c :d :e})
 
 (join #{{:a 1 :b 2 :c 3} {:a 1 :b 21 :c 42}}
       #{{:a 1 :b 2 :e 5} {:a 1 :b 21 :d 4}})
-
 
 ;; Concurrency
 ;; Atoms
@@ -50,6 +50,7 @@ bob
 @bob
 
 (swap! bob update-in [:age] - 1)
+
 ;; Compare:
 bob
 @bob
